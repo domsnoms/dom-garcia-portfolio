@@ -14,26 +14,70 @@
   <meta name="twitter:title" content="Dom Garcia - AI Strategist & Product Builder">
   <meta name="twitter:description" content="I lead AI strategy and build products from concept to enterprise scale.">
   <meta name="twitter:image" content="https://inic.io/images/work1_web.jpg">
+  <meta name="theme-color" content="#1e293b">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dom Garcia",
+    "url": "https://inic.io",
+    "jobTitle": "AI Strategist & Product Builder",
+    "sameAs": ["https://www.linkedin.com/in/garciadominic"]
+  }
+  </script>
   <style>
+    :root {
+      --color-primary: #2563eb;
+      --color-primary-hover: #1d4ed8;
+      --color-primary-light: #60a5fa;
+      --color-primary-bg: rgba(37,99,235,0.08);
+      --color-dark: #1e293b;
+      --color-text: #1a202c;
+      --color-text-secondary: #475569;
+      --color-text-muted: #64748b;
+      --color-text-faint: #94a3b8;
+      --color-bg: #f8f9fa;
+      --color-bg-input: #f8fafc;
+      --color-white: white;
+      --color-border: #e2e8f0;
+      --color-green: #22c55e;
+      --color-green-bg: #f0fdf4;
+      --color-green-border: #bbf7d0;
+      --color-green-hover-bg: #dcfce7;
+      --color-green-dark: #166534;
+      --color-blue-bg: #f0f7ff;
+      --color-blue-border: #bfdbfe;
+      --color-blue-hover-bg: #dbeafe;
+      --color-teal: #0f766e;
+      --color-teal-bg: rgba(15, 118, 110, 0.1);
+      --color-linkedin: #0a66c2;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 12px;
+      --radius-full: 99px;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #f8f9fa; color: #1a202c; line-height: 1.7; }
-    a { color: #2563eb; text-decoration: none; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: var(--color-bg); color: var(--color-text); line-height: 1.7; }
+    a { color: var(--color-primary); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+    button:focus-visible, a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
     
-    nav { background: #1e293b; padding: 1rem 2rem; position: relative; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav { background: var(--color-dark); padding: 1rem 2rem; position: relative; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
     nav .nav-container { max-width: 950px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; position: relative; padding: 0 2rem; }
-    nav .logo { font-size: 1.3rem; font-weight: 600; color: white; }
-    nav a { color: white; font-size: 0.95rem; transition: color 0.3s; cursor: pointer; display: block; padding: 0.9rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
-    nav a:hover { color: #60a5fa; text-decoration: none; background: rgba(255,255,255,0.05); }
-    nav a.active { color: #60a5fa; }
+    nav .logo { font-size: 1.3rem; font-weight: 600; color: var(--color-white); }
+    nav a { color: var(--color-white); font-size: 0.95rem; transition: color 0.3s; cursor: pointer; display: block; padding: 0.9rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    nav a:hover { color: var(--color-primary-light); text-decoration: none; background: rgba(255,255,255,0.05); }
+    nav a.active { color: var(--color-primary-light); }
 
     .nav-tagline { color: rgba(255,255,255,0.65); font-size: 0.85rem; font-weight: 400; flex: 1; text-align: right; margin-right: 1rem; }
     .nav-right { display: flex; align-items: center; gap: 0.5rem; }
-    .nav-linkedin { color: #0a66c2; display: flex; align-items: center; padding: 4px; transition: opacity 0.2s; text-decoration: none; border-bottom: none; }
+    .nav-linkedin { color: var(--color-linkedin); display: flex; align-items: center; padding: 4px; transition: opacity 0.2s; text-decoration: none; border-bottom: none; }
     .nav-linkedin:hover { opacity: 0.8; text-decoration: none; }
 
     .hamburger { display: block; background: none; border: none; cursor: pointer; padding: 4px; width: 28px; height: 24px; position: relative; }
-    .hamburger span { display: block; width: 100%; height: 2px; background: white; border-radius: 2px; position: absolute; left: 0; transition: all 0.3s ease; }
+    .hamburger span { display: block; width: 100%; height: 2px; background: var(--color-white); border-radius: 2px; position: absolute; left: 0; transition: all 0.3s ease; }
     .hamburger span:nth-child(1) { top: 2px; }
     .hamburger span:nth-child(2) { top: 11px; }
     .hamburger span:nth-child(3) { bottom: 2px; }
@@ -41,7 +85,7 @@
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { bottom: 11px; transform: rotate(-45deg); }
 
-    nav ul { list-style: none; display: none; flex-direction: column; position: absolute; top: 100%; left: 2rem; right: 2rem; background: #1e293b; padding: 0; margin: 0; gap: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 999; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; border-radius: 0 0 8px 8px; }
+    nav ul { list-style: none; display: none; flex-direction: column; position: absolute; top: 100%; left: 2rem; right: 2rem; background: var(--color-dark); padding: 0; margin: 0; gap: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 999; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; border-radius: 0 0 var(--radius-sm) var(--radius-sm); }
     nav ul.show { display: flex; max-height: 500px; }
     
     .container { max-width: 950px; margin: 0 auto; padding: 2.5rem 2rem 0; flex: 1; display: flex; flex-direction: column; width: 100%; }
@@ -59,58 +103,58 @@
     #home .bio-box > h3, #home .bio-box > p { flex-shrink: 0; }
     #home .hero-photos { margin-bottom: 0.4rem; }
     #home .widget-row { margin-bottom: 0.8rem; flex-shrink: 0; }
-    #home .stat-grid { margin: 0.8rem 0 0 0 !important; gap: 1rem; flex-shrink: 0; }
+    #home .stat-grid { margin: 0.8rem 0 0 0; gap: 1rem; flex-shrink: 0; }
     #home .stat-card { padding: 1rem 0.8rem; }
 
     section { margin-bottom: 0; flex: 1; display: flex; flex-direction: column; }
-    h2 { font-size: 1.75rem; margin-bottom: 0.5rem; color: #1a202c; border-bottom: 3px solid #2563eb; padding-bottom: 0.6rem; display: inline-block; font-weight: 600; flex-shrink: 0; }
-    .page-tagline { color: #64748b; font-size: 0.88rem; line-height: 1.5; margin-bottom: 1.5rem; flex-shrink: 0; }
-    
-    .bio-box { background: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; }
+    h2 { font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--color-text); border-bottom: 3px solid var(--color-primary); padding-bottom: 0.6rem; display: inline-block; font-weight: 600; flex-shrink: 0; }
+    .page-tagline { color: var(--color-text-muted); font-size: 0.88rem; line-height: 1.5; margin-bottom: 1.5rem; flex-shrink: 0; }
+
+    .bio-box { background: var(--color-white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 2rem; border-left: 5px solid var(--color-primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; }
     .hero-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 1rem; position: relative; z-index: 0; }
-    .hero-photos img { width: 100%; height: 260px; object-fit: cover; object-position: top; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; }
+    .hero-photos img { width: 100%; height: 260px; object-fit: cover; object-position: top; border-radius: var(--radius-md); box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; }
     .bio-box p { margin-bottom: 1rem; }
     .bio-box strong { font-weight: 600; }
-    
+
     .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin: 1.5rem 0; margin-top: auto; }
-    .stat-card { background: white; padding: 1.5rem; border-radius: 10px; text-align: center; border-top: 4px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    .stat-card .number { font-size: 1.8rem; font-weight: 700; color: #2563eb; letter-spacing: -0.5px; }
-    .stat-card .label { font-size: 0.78rem; color: #64748b; margin-top: 0.4rem; line-height: 1.4; }
-    
+    .stat-card { background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; border-top: 4px solid var(--color-primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .stat-card .number { font-size: 1.8rem; font-weight: 700; color: var(--color-primary); letter-spacing: -0.5px; }
+    .stat-card .label { font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.4rem; line-height: 1.4; }
+
     .widget-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 1rem; }
-    .action-widget { display: flex; align-items: center; gap: 0.8rem; border-radius: 10px; padding: 1rem 1.2rem; text-decoration: none; color: #1a202c; transition: background 0.2s, box-shadow 0.2s; cursor: pointer; }
+    .action-widget { display: flex; align-items: center; gap: 0.8rem; border-radius: var(--radius-md); padding: 1rem 1.2rem; text-decoration: none; color: var(--color-text); transition: background 0.2s, box-shadow 0.2s; cursor: pointer; }
     .action-widget:hover { text-decoration: none; }
-    .action-widget.resume { background: #f0f7ff; border: 1px solid #bfdbfe; }
-    .action-widget.resume:hover { background: #dbeafe; box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15); }
-    .action-widget.chat { background: #f0fdf4; border: 1px solid #bbf7d0; }
-    .action-widget.chat:hover { background: #dcfce7; box-shadow: 0 2px 8px rgba(34, 197, 94, 0.15); }
+    .action-widget.resume { background: var(--color-blue-bg); border: 1px solid var(--color-blue-border); }
+    .action-widget.resume:hover { background: var(--color-blue-hover-bg); box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15); }
+    .action-widget.chat { background: var(--color-green-bg); border: 1px solid var(--color-green-border); }
+    .action-widget.chat:hover { background: var(--color-green-hover-bg); box-shadow: 0 2px 8px rgba(34, 197, 94, 0.15); }
     .action-icon { font-size: 1.3rem; flex-shrink: 0; }
     .action-text { flex: 1; display: flex; flex-direction: column; }
-    .action-text strong { font-size: 0.85rem; font-weight: 600; color: #1e293b; }
-    .action-text span { font-size: 0.7rem; color: #64748b; }
+    .action-text strong { font-size: 0.85rem; font-weight: 600; color: var(--color-dark); }
+    .action-text span { font-size: 0.7rem; color: var(--color-text-muted); }
     .action-arrow { font-size: 1rem; font-weight: 700; }
-    .action-widget.resume .action-arrow { color: #2563eb; }
-    .action-widget.chat .action-arrow { color: #22c55e; }
+    .action-widget.resume .action-arrow { color: var(--color-primary); }
+    .action-widget.chat .action-arrow { color: var(--color-green); }
 
     .projects { display: grid; gap: 1.8rem; }
-    .project-card { background: white; padding: 1.8rem; border-radius: 12px; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .project-card { background: var(--color-white); padding: 1.8rem; border-radius: var(--radius-lg); border-left: 5px solid var(--color-primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
     .project-card h3 { font-size: 1.2rem; margin-bottom: 0.4rem; font-weight: 600; }
-    .project-card .company { color: #2563eb; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.8rem; }
+    .project-card .company { color: var(--color-primary); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.8rem; }
     .project-card .impact { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
-    .impact-badge { background: rgba(15, 118, 110, 0.1); color: #0f766e; font-size: 0.78rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 99px; white-space: nowrap; }
+    .impact-badge { background: var(--color-teal-bg); color: var(--color-teal); font-size: 0.78rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: var(--radius-full); white-space: nowrap; }
 
     .carousel { display: grid; grid-template-columns: 80px 1fr; gap: 0; position: relative; flex: 1; }
     .carousel-sidebar { display: flex; flex-direction: column; align-items: center; position: relative; min-height: 280px; }
-    .carousel-nav-arrow { background: #1e293b; color: white; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; margin: 0.3rem 0; }
-    .carousel-nav-arrow:hover { background: #2563eb; }
+    .carousel-nav-arrow { background: var(--color-dark); color: var(--color-white); border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; margin: 0.3rem 0; }
+    .carousel-nav-arrow:hover { background: var(--color-primary); }
     .carousel-timeline { display: flex; flex-direction: column; align-items: center; flex: 1; position: relative; padding: 0; }
-    .carousel-timeline::before { content: ''; position: absolute; top: 2%; bottom: 2%; left: 50%; width: 2px; background: #e2e8f0; transform: translateX(-50%); z-index: 0; }
+    .carousel-timeline::before { content: ''; position: absolute; top: 2%; bottom: 2%; left: 50%; width: 2px; background: var(--color-border); transform: translateX(-50%); z-index: 0; }
     .timeline-year-mark { position: absolute; left: 0; right: 0; display: flex; align-items: center; justify-content: center; z-index: 1; cursor: pointer; }
-    .timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: #e2e8f0; border: 2px solid #f8f9fa; transition: all 0.2s; flex-shrink: 0; }
-    .timeline-dot.active { background: #2563eb; border-color: white; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); }
-    .timeline-year-label { font-size: 0.62rem; color: #94a3b8; font-weight: 600; transition: color 0.2s; position: absolute; right: calc(50% + 12px); white-space: nowrap; }
-    .timeline-year-label.active { color: #2563eb; font-weight: 700; }
-    .timeline-range-line { position: absolute; left: 50%; width: 3px; background: #2563eb; transform: translateX(-50%); z-index: 0; border-radius: 2px; transition: opacity 0.2s; opacity: 0; }
+    .timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-border); border: 2px solid var(--color-bg); transition: all 0.2s; flex-shrink: 0; }
+    .timeline-dot.active { background: var(--color-primary); border-color: var(--color-white); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); }
+    .timeline-year-label { font-size: 0.62rem; color: var(--color-text-faint); font-weight: 600; transition: color 0.2s; position: absolute; right: calc(50% + 12px); white-space: nowrap; }
+    .timeline-year-label.active { color: var(--color-primary); font-weight: 700; }
+    .timeline-range-line { position: absolute; left: 50%; width: 3px; background: var(--color-primary); transform: translateX(-50%); z-index: 0; border-radius: 2px; transition: opacity 0.2s; opacity: 0; }
     .timeline-range-line.active { opacity: 1; }
     .carousel-track { overflow: hidden; min-height: 280px; }
     .carousel-slide { display: none; height: 100%; }
@@ -122,81 +166,81 @@
     
 
     .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .skill-tag { background: white; color: #475569; font-size: 0.8rem; font-weight: 500; padding: 0.4rem 0.9rem; border-radius: 99px; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+    .skill-tag { background: var(--color-white); color: var(--color-text-secondary); font-size: 0.8rem; font-weight: 500; padding: 0.4rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--color-border); box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
 
     .side-projects-list { display: flex; flex-direction: column; gap: 0.8rem; }
-    .side-project-item { background: white; padding: 1rem 1.2rem; border-radius: 8px; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    .side-project-item h4 { font-size: 0.9rem; font-weight: 600; color: #1e293b; }
-    .side-project-item p { font-size: 0.82rem; color: #475569; line-height: 1.5; margin: 0; }
-    .side-project-bullets { margin: 0.3rem 0 0; padding-left: 1.1rem; color: #64748b; font-size: 0.82rem; line-height: 1.5; }
+    .side-project-item { background: var(--color-white); padding: 1rem 1.2rem; border-radius: var(--radius-sm); border-left: 5px solid var(--color-primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .side-project-item h4 { font-size: 0.9rem; font-weight: 600; color: var(--color-dark); }
+    .side-project-item p { font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.5; margin: 0; }
+    .side-project-bullets { margin: 0.3rem 0 0; padding-left: 1.1rem; color: var(--color-text-muted); font-size: 0.82rem; line-height: 1.5; }
     .side-project-bullets li { margin-bottom: 0.15rem; }
-    .side-project-item p, .interest-content .desc, .page-tagline { color: #64748b; }
-    .project-badge { background: #dcfce7; color: #166534; font-size: 0.65rem; font-weight: 600; padding: 0.15rem 0.55rem; border-radius: 99px; white-space: nowrap; }
-    .project-meta { font-size: 0.72rem; color: #94a3b8; margin-top: 0.4rem; font-weight: 500; }
+    .side-project-item p, .interest-content .desc, .page-tagline { color: var(--color-text-muted); }
+    .project-badge { background: var(--color-green-hover-bg); color: var(--color-green-dark); font-size: 0.65rem; font-weight: 600; padding: 0.15rem 0.55rem; border-radius: var(--radius-full); white-space: nowrap; }
+    .project-meta { font-size: 0.72rem; color: var(--color-text-faint); margin-top: 0.4rem; font-weight: 500; }
 
     /* Interest page */
     #about section { margin-bottom: 0; }
     .interest-carousel { display: block; }
     .interest-carousel-layout { display: flex; gap: 0.8rem; align-items: stretch; }
     .interest-nav-rail { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.4rem; min-width: 36px; }
-    .interest-nav-arrow { background: none; border: none; cursor: pointer; font-size: 0.8rem; color: #94a3b8; padding: 0.2rem; line-height: 1; transition: color 0.2s; }
-    .interest-nav-arrow:hover { color: #2563eb; }
-    .interest-nav-arrow:active { color: #2563eb; }
+    .interest-nav-arrow { background: none; border: none; cursor: pointer; font-size: 0.8rem; color: var(--color-text-faint); padding: 0.2rem; line-height: 1; transition: color 0.2s; }
+    .interest-nav-arrow:hover { color: var(--color-primary); }
+    .interest-nav-arrow:active { color: var(--color-primary); }
     .interest-emoji { font-size: 1.3rem; border: none; cursor: pointer; padding: 0.25rem; background: none; opacity: 0.3; transition: opacity 0.25s, transform 0.25s; line-height: 1; }
     .interest-emoji.active { opacity: 1; transform: scale(1.2); }
     .interest-carousel-track { flex: 1; min-width: 0; }
     .interest-carousel-slide { display: none; }
-    /* Desktop: photo left (natural ratio), caption right */
-    .interest-carousel-slide.active { display: flex; flex-direction: row; align-items: stretch; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    .interest-carousel-slide img { width: auto; height: 100%; display: block; border-radius: 0; }
-    .interest-carousel-slide .interest-content { background: white; flex: 1; padding: 1.5rem 1.5rem; display: flex; flex-direction: column; justify-content: center; border: none; border-radius: 0; box-shadow: none; min-width: 0; }
-    .interest-content .activity { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; color: #1e293b; }
-    .interest-content .desc { font-size: 0.82rem; color: #64748b; line-height: 1.55; }
+    /* Desktop: photo left (fixed width), caption right */
+    .interest-carousel-slide.active { display: flex; flex-direction: row; align-items: stretch; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .interest-carousel-slide img { width: 40%; height: 100%; object-fit: cover; display: block; border-radius: 0; }
+    .interest-carousel-slide .interest-content { background: var(--color-white); flex: 1; padding: 1.5rem 1.5rem; display: flex; flex-direction: column; justify-content: center; border: none; border-radius: 0; box-shadow: none; min-width: 0; }
+    .interest-content .activity { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--color-dark); }
+    .interest-content .desc { font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.55; }
     
-    .cta-section { background: white; padding: 2rem; border-radius: 12px; text-align: center; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; }
+    .cta-section { background: var(--color-white); padding: 2rem; border-radius: var(--radius-lg); text-align: center; border-left: 5px solid var(--color-primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; }
     .cta-section p { margin-bottom: 1.2rem; }
     .cta-links { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
-    .cta-links a { background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 500; transition: opacity 0.2s; }
+    .cta-links a { background: var(--color-primary); color: var(--color-white); padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); font-weight: 500; transition: opacity 0.2s; }
     .cta-links a:hover { opacity: 0.9; text-decoration: none; }
     .contact-form { display: flex; flex-direction: column; gap: 1rem; flex: 1; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
-    .form-group label { font-size: 0.82rem; font-weight: 600; color: #475569; }
-    .form-group input, .form-group textarea { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.9rem; font-family: inherit; transition: border-color 0.2s; background: #f8fafc; }
-    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+    .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--color-text-secondary); }
+    .form-group input, .form-group textarea { padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: 0.9rem; font-family: inherit; transition: border-color 0.2s; background: var(--color-bg-input); }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
     .form-group textarea { resize: vertical; }
-    .form-submit { background: #2563eb; color: white; border: none; padding: 0.85rem 2rem; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: background 0.2s; align-self: flex-start; }
-    .form-submit:hover { background: #1d4ed8; }
+    .form-submit { background: var(--color-primary); color: var(--color-white); border: none; padding: 0.85rem 2rem; border-radius: var(--radius-sm); font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: background 0.2s; align-self: flex-start; }
+    .form-submit:hover { background: var(--color-primary-hover); }
     
     .status-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 1rem; }
-    .status-widget { background: #1e293b; border-radius: 10px; padding: 1.2rem 1.5rem; display: flex; align-items: center; gap: 1rem; border-left: 4px solid #22c55e; }
-    .status-widget.location { border-left-color: #60a5fa; }
-    .status-dot { width: 10px; height: 10px; background: #22c55e; border-radius: 50%; flex-shrink: 0; animation: pulse 2s ease-in-out infinite; }
+    .status-widget { background: var(--color-dark); border-radius: var(--radius-md); padding: 1.2rem 1.5rem; display: flex; align-items: center; gap: 1rem; border-left: 4px solid var(--color-green); }
+    .status-widget.location { border-left-color: var(--color-primary-light); }
+    .status-dot { width: 10px; height: 10px; background: var(--color-green); border-radius: 50%; flex-shrink: 0; animation: pulse 2s ease-in-out infinite; }
     @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); } 50% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); } }
     .status-content { flex: 1; }
-    .status-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: #60a5fa; font-weight: 600; margin-bottom: 0.2rem; }
-    .status-text { color: white; font-size: 0.9rem; font-weight: 400; line-height: 1.5; }
+    .status-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.2rem; }
+    .status-text { color: var(--color-white); font-size: 0.9rem; font-weight: 400; line-height: 1.5; }
     .status-meta { display: flex; gap: 1.5rem; margin-top: 0.5rem; }
     .status-meta span { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
 
-    footer { position: fixed; bottom: 0; left: 0; right: 0; text-align: center; padding: 0.6rem 1rem; color: #64748b; font-size: 0.75rem; border-top: 1px solid #e2e8f0; background: #f8f9fa; z-index: 998; }
+    footer { position: fixed; bottom: 0; left: 0; right: 0; text-align: center; padding: 0.6rem 1rem; color: var(--color-text-muted); font-size: 0.75rem; border-top: 1px solid var(--color-border); background: var(--color-bg); z-index: 998; }
     .page { padding-bottom: 3.5rem; }
 
     /* PAGE NAVIGATION ARROWS */
-    .page-nav-hint { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; pointer-events: none; z-index: 999; padding: 0.45rem 2rem; max-width: 950px; margin: 0 auto; }
-    .page-nav-arrow { display: flex; align-items: center; gap: 0.4rem; color: #2563eb; font-size: 0.75rem; font-weight: 600; pointer-events: auto; cursor: pointer; padding: 0.4rem 0.8rem; border-radius: 20px; background: rgba(37,99,235,0.08); transition: all 0.25s ease; border: 1px solid rgba(37,99,235,0.2); }
-    .page-nav-arrow:hover { background: #2563eb; color: white; text-decoration: none; box-shadow: 0 2px 8px rgba(37,99,235,0.3); }
-    .page-nav-arrow:hover svg { stroke: white; }
-    .page-nav-arrow svg { width: 14px; height: 14px; stroke: #2563eb; transition: stroke 0.25s; }
+    .page-nav-hint { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); display: flex; justify-content: space-between; align-items: center; pointer-events: none; z-index: 999; padding: 0.45rem 2rem; width: 100%; max-width: 950px; }
+    .page-nav-arrow { display: flex; align-items: center; gap: 0.4rem; color: var(--color-primary); font-size: 0.75rem; font-weight: 600; pointer-events: auto; cursor: pointer; padding: 0.4rem 0.8rem; border-radius: 20px; background: var(--color-primary-bg); transition: all 0.25s ease; border: 1px solid rgba(37,99,235,0.2); }
+    .page-nav-arrow:hover { background: var(--color-primary); color: var(--color-white); text-decoration: none; box-shadow: 0 2px 8px rgba(37,99,235,0.3); }
+    .page-nav-arrow:hover svg { stroke: var(--color-white); }
+    .page-nav-arrow svg { width: 14px; height: 14px; stroke: var(--color-primary); transition: stroke 0.25s; }
     .page-nav-arrow.hidden { opacity: 0; pointer-events: none; }
 
     /* Mobile bottom nav bar - hidden on desktop */
     .mobile-nav-bar { display: none; }
 
-    .page-nav-arrow .arrow-key { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 16px; background: rgba(37,99,235,0.1); border: 1px solid rgba(37,99,235,0.25); border-radius: 3px; font-size: 0.55rem; font-weight: 700; color: #2563eb; margin: 0 2px; }
+    .page-nav-arrow .arrow-key { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 16px; background: rgba(37,99,235,0.1); border: 1px solid rgba(37,99,235,0.25); border-radius: 3px; font-size: 0.55rem; font-weight: 700; color: var(--color-primary); margin: 0 2px; }
 
     /* Navigation hint toast */
-    .nav-toast { position: fixed; bottom: 2.5rem; left: 50%; transform: translateX(-50%); background: rgba(30, 41, 59, 0.9); color: white; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.78rem; font-weight: 500; z-index: 1100; opacity: 0; transition: opacity 0.4s ease; pointer-events: none; white-space: nowrap; backdrop-filter: blur(8px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .nav-toast { position: fixed; bottom: 2.5rem; left: 50%; transform: translateX(-50%); background: rgba(30, 41, 59, 0.9); color: var(--color-white); padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.78rem; font-weight: 500; z-index: 1100; opacity: 0; transition: opacity 0.4s ease; pointer-events: none; white-space: nowrap; backdrop-filter: blur(8px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
     .nav-toast.visible { opacity: 1; }
     .nav-toast .toast-key { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 18px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 3px; font-size: 0.6rem; font-weight: 700; padding: 0 3px; margin: 0 1px; vertical-align: middle; }
     @media (max-width: 768px) {
@@ -263,8 +307,8 @@
       .container { padding: 1.2rem 1rem 0; }
       .bio-box { padding: 1rem; overflow: hidden; flex: 1 1 0%; min-height: 0; }
       .bio-box p { font-size: 0.8rem; margin-bottom: 0.6rem; }
-      #home h3 { font-size: 1.05rem !important; }
-      #home .bio-box > p { font-size: 0.78rem !important; }
+      #home .bio-box h3 { font-size: 1.05rem; }
+      #home .bio-box > p { font-size: 0.78rem; }
       .stat-grid { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
       .stat-card { padding: 0.5rem 0.4rem; }
       .stat-card .number { font-size: 0.92rem; }
@@ -315,23 +359,23 @@
       .page-nav-hint { display: none; }
 
       /* Mobile bottom nav bar */
-      .mobile-nav-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: white; border-top: 1px solid #e2e8f0; z-index: 1000; padding: 0.3rem 0 0.45rem; justify-content: space-around; align-items: center; box-shadow: 0 -2px 8px rgba(0,0,0,0.06); }
-      .mobile-nav-item { display: flex; flex-direction: column; align-items: center; gap: 0.15rem; background: none; border: none; cursor: pointer; padding: 0.2rem 0; color: #94a3b8; transition: color 0.2s; min-width: 0; flex: 1; }
+      .mobile-nav-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: var(--color-white); border-top: 1px solid var(--color-border); z-index: 1000; padding: 0.3rem 0 0.45rem; justify-content: space-around; align-items: center; box-shadow: 0 -2px 8px rgba(0,0,0,0.06); }
+      .mobile-nav-item { display: flex; flex-direction: column; align-items: center; gap: 0.15rem; background: none; border: none; cursor: pointer; padding: 0.2rem 0; color: var(--color-text-faint); transition: color 0.2s; min-width: 0; flex: 1; }
       .mobile-nav-item svg { width: 20px; height: 20px; flex-shrink: 0; }
       .mobile-nav-item span { font-size: 0.55rem; font-weight: 600; white-space: nowrap; }
-      .mobile-nav-item.active { color: #2563eb; }
-      .mobile-nav-item.active svg { stroke: #2563eb; }
+      .mobile-nav-item.active { color: var(--color-primary); }
+      .mobile-nav-item.active svg { stroke: var(--color-primary); }
 
       /* Adjust page bottom padding for mobile nav bar */
       .page { padding-bottom: 70px; min-height: calc(100vh - 40px); }
 
       /* Experience page on mobile */
       #projects .container h2 { font-size: 1.2rem; }
-      #projects .container > section > div:first-child { margin-bottom: 0.5rem !important; }
-      #projects .action-widget { padding: 0.4rem 0.7rem; max-width: 180px !important; }
+      #projects .container > section > .exp-header { margin-bottom: 0.5rem; }
+      #projects .action-widget { padding: 0.4rem 0.7rem; max-width: 180px; }
       #projects .action-text strong { font-size: 0.65rem; }
       #projects .action-text span { font-size: 0.55rem; }
-      #projects .action-icon { font-size: 0.85rem !important; }
+      #projects .action-icon { font-size: 0.85rem; }
       .carousel { grid-template-columns: 55px 1fr; }
       .carousel-arrows { display: none; }
       .carousel-nav-arrow { display: flex; width: 24px; height: 24px; font-size: 0.75rem; }
@@ -353,6 +397,25 @@
       .mobile-nav-item svg { width: 18px; height: 18px; }
       .mobile-nav-item span { font-size: 0.5rem; }
     }
+
+    /* Utility classes for extracted inline styles */
+    .exp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+    .exp-header h2 { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+    .exp-resume-link { max-width: 240px; margin: 0; padding: 0.7rem 1rem; }
+    .exp-resume-link .action-icon { font-size: 1.1rem; }
+    .home-actions { display: flex; gap: 0.5rem; }
+    .home-actions .action-widget { flex: 1; }
+    .home-stat-grid { margin-top: 0.4rem; }
+    .card-list { margin: 0.8rem 0; padding-left: 1.2rem; color: var(--color-text-secondary); }
+    .side-project-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.3rem; }
+    .side-projects-section { margin-bottom: 1.5rem; }
+    .skills-heading { font-size: 0.85rem; font-weight: 600; color: var(--color-text-faint); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.8rem; margin-top: 0; }
+    .cta-section-left { text-align: left; }
+    .form-group-flex { flex: 1; }
+    .form-textarea-flex { flex: 1 1 auto; }
+    .bio-heading { text-align: center; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--color-text); }
+    .bio-subheading { text-align: center; color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 0.6rem; }
+    .nav-hint-text { font-size: 0.7rem; color: var(--color-text-muted); }
   </style>
 </head>
 <body>
@@ -364,19 +427,19 @@
         <a href="https://www.linkedin.com/in/garciadominic" target="_blank" class="nav-linkedin" aria-label="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
-        <button class="hamburger" onclick="toggleMenu()">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
       <ul id="navMenu">
-        <li><a onclick="showPage('home')" class="nav-link active">Overview</a></li>
-        <li><a onclick="showPage('projects')" class="nav-link">Experience</a></li>
-        <li><a onclick="showPage('skills-projects')" class="nav-link">Projects</a></li>
-        <li><a onclick="showPage('about')" class="nav-link">Interests</a></li>
-        <li><a onclick="showPage('contact')" class="nav-link">Connect</a></li>
-        <li style="padding: 0.5rem 1.5rem; border-bottom: none;"><span style="font-size: 0.7rem; color: #64748b;">Use ← → arrow keys to navigate</span></li>
+        <li><a class="nav-link active" data-nav="home">Overview</a></li>
+        <li><a class="nav-link" data-nav="projects">Experience</a></li>
+        <li><a class="nav-link" data-nav="skills-projects">Projects</a></li>
+        <li><a class="nav-link" data-nav="about">Interests</a></li>
+        <li><a class="nav-link" data-nav="contact">Connect</a></li>
+        <li style="padding: 0.5rem 1.5rem; border-bottom: none;"><span class="nav-hint-text">Use ← → arrow keys to navigate</span></li>
       </ul>
     </div>
   </nav>
@@ -386,12 +449,12 @@
     <div class="container">
       <section class="bio-box">
         <div class="hero-photos">
-          <img src="images/work 2.jpg" alt="Dom Garcia">
-          <img src="images/work1_web.jpg" alt="Dom Garcia">
-          <img src="images/work 3.jpg" alt="Dom Garcia">
+          <img src="images/work-2.jpg" alt="Dom Garcia presenting" width="300" height="260">
+          <img src="images/work1_web.jpg" alt="Dom Garcia headshot" width="300" height="260">
+          <img src="images/work-3.jpg" alt="Dom Garcia at work" width="300" height="260">
         </div>
-        <h3 style="text-align: center; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.3rem; color: #1a202c;">Hi, I'm Dom.</h3>
-        <p style="text-align: center; color: #475569; font-size: 0.95rem; margin-bottom: 0.6rem;">I lead AI strategy and build products from concept to enterprise scale.</p>
+        <h3 class="bio-heading">Hi, I'm Dom.</h3>
+        <p class="bio-subheading">I lead AI strategy and build products from concept to enterprise scale.</p>
         <div class="widget-row">
           <div class="status-widget">
             <div class="status-dot"></div>
@@ -400,8 +463,8 @@
               <div class="status-text">Seeking my next AI product leadership challenge (Remote or Hybrid)</div>
             </div>
           </div>
-          <div style="display: flex; gap: 0.5rem;">
-            <a href="https://drive.google.com/file/d/1nVNP1shRZ9TqcG3B-9YVtLXjtZxmLE_b/view?usp=drive_link" target="_blank" rel="noopener" class="action-widget resume" style="flex: 1;">
+          <div class="home-actions">
+            <a href="https://drive.google.com/file/d/1nVNP1shRZ9TqcG3B-9YVtLXjtZxmLE_b/view?usp=drive_link" target="_blank" rel="noopener" class="action-widget resume">
               <span class="action-icon">&#x1F4C4;</span>
               <span class="action-text">
                 <strong>My Resume</strong>
@@ -409,7 +472,7 @@
               </span>
               <span class="action-arrow">&#x2193;</span>
             </a>
-            <a onclick="showPage('contact', true)" class="action-widget chat" style="flex: 1;">
+            <a class="action-widget chat" data-nav="contact">
               <span class="action-icon">&#x1F4AC;</span>
               <span class="action-text">
                 <strong>Let's Chat</strong>
@@ -419,7 +482,7 @@
             </a>
           </div>
         </div>
-        <div class="stat-grid" style="margin-top: 0.4rem;">
+        <div class="stat-grid home-stat-grid">
           <div class="stat-card">
             <div class="number">$50M+</div>
             <div class="label">Incremental revenue generated</div>
@@ -445,10 +508,10 @@
   <div id="projects" class="page">
     <div class="container">
       <section>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <h2 style="margin-bottom: 0; border-bottom: none; padding-bottom: 0;">Experience</h2>
-          <a href="https://drive.google.com/file/d/1nVNP1shRZ9TqcG3B-9YVtLXjtZxmLE_b/view?usp=drive_link" target="_blank" rel="noopener" class="action-widget resume" style="max-width: 240px; margin: 0; padding: 0.7rem 1rem;">
-            <span class="action-icon" style="font-size: 1.1rem;">&#x1F4C4;</span>
+        <div class="exp-header">
+          <h2>Experience</h2>
+          <a href="https://drive.google.com/file/d/1nVNP1shRZ9TqcG3B-9YVtLXjtZxmLE_b/view?usp=drive_link" target="_blank" rel="noopener" class="action-widget resume exp-resume-link">
+            <span class="action-icon">&#x1F4C4;</span>
             <span class="action-text">
               <strong>My Resume</strong>
               <span>View PDF</span>
@@ -458,9 +521,9 @@
         </div>
         <div class="carousel" id="expCarousel">
           <div class="carousel-sidebar">
-            <button class="carousel-nav-arrow" onclick="moveSlide(-1)">&#x2191;</button>
+            <button class="carousel-nav-arrow" data-slide-dir="-1" aria-label="Previous role">&#x2191;</button>
             <div class="carousel-timeline" id="carouselTimeline"></div>
-            <button class="carousel-nav-arrow" onclick="moveSlide(1)">&#x2193;</button>
+            <button class="carousel-nav-arrow" data-slide-dir="1" aria-label="Next role">&#x2193;</button>
           </div>
           <div class="carousel-track">
 
@@ -468,7 +531,7 @@
               <div class="project-card">
                 <h3>Lead Product Manager, Artificial Intelligence</h3>
                 <div class="company">H&R Block | 2024 – 2026</div>
-                <ul style="margin: 0.8rem 0; padding-left: 1.2rem; color: #475569;">
+                <ul class="card-list">
                   <li>Defined AI product vision and roadmap for voice and digital experiences across 10+ enterprise business lines</li>
                   <li>Designed and launched agentic AI workflow for appointment setting — driving 10%+ conversion lift and $50M+ incremental revenue at 400% ROI</li>
                   <li>Built AI-assisted workflows for tax professionals and care agents, reducing AHT by 8% and improving CSAT by 15%</li>
@@ -482,7 +545,7 @@
               <div class="project-card">
                 <h3>Senior Technical Product Manager, Machine Learning</h3>
                 <div class="company">CodaMetrix | 2023</div>
-                <ul style="margin: 0.8rem 0; padding-left: 1.2rem; color: #475569;">
+                <ul class="card-list">
                   <li>Drove ML requirements and delivery across 4 clinical service lines — radiology, pathology, surgery, bedside</li>
                   <li>Partnered with ML research and engineering to deliver 3 zero-to-one product lines for 20+ enterprise healthcare customers</li>
                   <li>Drove NLP and natural language interface requirements, increasing medical coding rates by up to 30%</li>
@@ -496,7 +559,7 @@
               <div class="project-card">
                 <h3>Senior Technical Program Manager, Platform Services</h3>
                 <div class="company">Twitter | 2022 – 2023</div>
-                <ul style="margin: 0.8rem 0; padding-left: 1.2rem; color: #475569;">
+                <ul class="card-list">
                   <li>Managed 5 platform programs spanning security, compliance, and storage for FTC requirements</li>
                   <li>Directed program requirements across 200+ engineering teams, increasing compliance velocity by 400%</li>
                   <li>Built 6 security and compliance dashboards reducing leadership reporting cycles from hours to minutes</li>
@@ -510,11 +573,11 @@
               <div class="project-card">
                 <h3>Product Manager, Analytics</h3>
                 <div class="company">Acrisure Technology Group | 2021 – 2022</div>
-                <ul style="margin: 0.8rem 0; padding-left: 1.2rem; color: #475569;">
-                  <li>Stood up analytics function from zero for fintech startup — defining strategy, OKRs, and governance</li>
+                <ul class="card-list">
+                  <li>Built analytics function from zero for fintech startup — defining strategy, OKRs, and governance</li>
                   <li>Built behavioral and cohort analytics system tracking thousands of agent accounts</li>
                   <li>Drove agency adoption from 50 to 500+ through conversion and retention insights</li>
-                  <li>Road-mapped AI-enabled and analytics features generating 20% increase in weekly active user growth</li>
+                  <li>Defined roadmap for AI-enabled and analytics features generating 20% increase in weekly active user growth</li>
                 </ul>
                 <div class="impact"><span class="impact-badge">10x agency adoption</span><span class="impact-badge">20% WAU growth</span><span class="impact-badge">Zero-to-one analytics</span></div>
               </div>
@@ -524,7 +587,7 @@
               <div class="project-card">
                 <h3>Product Manager, Artificial Intelligence</h3>
                 <div class="company">Department of Defense – Joint AI Center | 2018 – 2021</div>
-                <ul style="margin: 0.8rem 0; padding-left: 1.2rem; color: #475569;">
+                <ul class="card-list">
                   <li>Chartered strategic plan and roadmap for $10M+ HADR AI initiative, leading a 5-person team</li>
                   <li>Pioneered data management system producing 1M+ labeled datasets for ML model development</li>
                   <li>Delivered 5 AI-enabled products for 3 federal, state, and local agencies</li>
@@ -538,7 +601,7 @@
               <div class="project-card">
                 <h3>Product Manager, Intelligence</h3>
                 <div class="company">United States Air Force | 2016 – 2018</div>
-                <ul style="margin: 0.8rem 0; padding-left: 1.2rem; color: #475569;">
+                <ul class="card-list">
                   <li>Directed a 5-person intelligence team delivering 10+ military intelligence products</li>
                   <li>Led transformation of pilot onboarding platform, driving down onboarding from weeks to days</li>
                   <li>Revamped intelligence training program, increasing readiness compliance to over 95%</li>
@@ -551,8 +614,8 @@
 
           </div>
           <div class="carousel-arrows">
-            <button class="carousel-btn" onclick="moveSlide(-1)">&#x2191;</button>
-            <button class="carousel-btn" onclick="moveSlide(1)">&#x2193;</button>
+            <button class="carousel-btn" data-slide-dir="-1" aria-label="Previous role">&#x2191;</button>
+            <button class="carousel-btn" data-slide-dir="1" aria-label="Next role">&#x2193;</button>
           </div>
         </div>
       </section>
@@ -566,9 +629,9 @@
         <h2>Projects & Skills</h2>
         <p class="page-tagline">What I'm building outside of work — same product thinking, AI-native approach.</p>
 
-        <div class="side-projects-list" style="margin-bottom: 1.5rem;">
+        <div class="side-projects-list side-projects-section">
           <div class="side-project-item">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.3rem;">
+            <div class="side-project-header">
               <h4>AI Job Application Pipeline</h4>
               <span class="project-badge">Complete</span>
             </div>
@@ -584,7 +647,7 @@
             <div class="project-meta">AI agent framework &middot; Multi-agent orchestration &middot; Human-on-the-loop quality gates</div>
           </div>
           <div class="side-project-item">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.3rem;">
+            <div class="side-project-header">
               <h4>Personal Brand & Portfolio Platform</h4>
               <span class="project-badge">Complete</span>
             </div>
@@ -596,7 +659,7 @@
           </div>
         </div>
 
-        <h3 style="font-size: 0.85rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.8rem; margin-top: 0;">Core Skills</h3>
+        <h3 class="skills-heading">Core Skills</h3>
         <div class="skill-tags">
           <span class="skill-tag">LLM Orchestration</span>
           <span class="skill-tag">Agentic Workflow Design</span>
@@ -622,37 +685,37 @@
         <div class="interest-carousel">
           <div class="interest-carousel-layout">
             <div class="interest-nav-rail">
-              <button class="interest-nav-arrow" onclick="moveInterest(-1)">▲</button>
-              <button class="interest-emoji active" onclick="showInterest(0)">🏃</button>
-              <button class="interest-emoji" onclick="showInterest(1)">🎧</button>
-              <button class="interest-emoji" onclick="showInterest(2)">🧱</button>
-              <button class="interest-emoji" onclick="showInterest(3)">✈️</button>
-              <button class="interest-nav-arrow" onclick="moveInterest(1)">▼</button>
+              <button class="interest-nav-arrow" data-interest-dir="-1" aria-label="Previous interest">▲</button>
+              <button class="interest-emoji active" data-interest-idx="0" aria-label="Running">🏃</button>
+              <button class="interest-emoji" data-interest-idx="1" aria-label="DJing">🎧</button>
+              <button class="interest-emoji" data-interest-idx="2" aria-label="Building with LEGO">🧱</button>
+              <button class="interest-emoji" data-interest-idx="3" aria-label="Traveling">✈️</button>
+              <button class="interest-nav-arrow" data-interest-dir="1" aria-label="Next interest">▼</button>
             </div>
             <div class="interest-carousel-track">
               <div class="interest-carousel-slide active">
-                <img src="images/running.jpg" alt="Dom running">
+                <img src="images/running.jpg" alt="Dom running on a trail" loading="lazy" width="400" height="300">
                 <div class="interest-content">
                   <div class="activity">Running</div>
                   <div class="desc">Half marathons, trail runs, continuous improvement mindset applied to miles.</div>
                 </div>
               </div>
               <div class="interest-carousel-slide">
-                <img src="images/djing.jpg" alt="Dom DJing">
+                <img src="images/djing.jpg" alt="Dom DJing a live set" loading="lazy" width="400" height="300">
                 <div class="interest-content">
                   <div class="activity">DJing</div>
                   <div class="desc">Reading the room, mixing live, building energy. Real-time feedback loops in every set.</div>
                 </div>
               </div>
               <div class="interest-carousel-slide">
-                <img src="images/legos.jpg" alt="Dom building Legos">
+                <img src="images/legos.jpg" alt="Dom building with LEGO" loading="lazy" width="400" height="300">
                 <div class="interest-content">
                   <div class="activity">Building Legos</div>
                   <div class="desc">Complex builds, modular systems. Same satisfaction as shipping a product — one brick at a time.</div>
                 </div>
               </div>
               <div class="interest-carousel-slide">
-                <img src="images/traveling.jpg" alt="Dom traveling">
+                <img src="images/traveling.jpg" alt="Dom traveling the world" loading="lazy" width="400" height="300">
                 <div class="interest-content">
                   <div class="activity">Traveling</div>
                   <div class="desc">Exploring new markets, cultures, and perspectives. Best product thinking happens outside the office.</div>
@@ -671,7 +734,7 @@
       <section>
         <h2>Connect</h2>
         <p class="page-tagline">Whether it's a role, a product bet, or just a good conversation about AI — I'm always up for it.</p>
-        <div class="cta-section" style="text-align: left;">
+        <div class="cta-section cta-section-left">
           <form action="https://formspree.io/f/xgonlgqk" method="POST" class="contact-form">
             <input type="hidden" name="_to" value="dom@inics.io">
             <div class="form-row">
@@ -688,9 +751,9 @@
               <label for="subject">What's on your mind?</label>
               <input type="text" id="subject" name="subject" placeholder="Job opportunity, collaboration, coffee chat...">
             </div>
-            <div class="form-group" style="flex: 1;">
+            <div class="form-group form-group-flex">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="3" required placeholder="Tell me what you're working on or what role you have in mind..." style="flex: 1 1 auto;"></textarea>
+              <textarea id="message" name="message" rows="3" required placeholder="Tell me what you're working on or what role you have in mind..." class="form-textarea-flex"></textarea>
             </div>
             <button type="submit" class="form-submit">Send Message</button>
           </form>
@@ -701,12 +764,12 @@
 
   <!-- PAGE NAVIGATION HINTS -->
   <div class="page-nav-hint" id="pageNavHint">
-    <div class="page-nav-arrow" id="navPrev" onclick="navigatePage(-1)">
+    <div class="page-nav-arrow" id="navPrev" data-page-dir="-1">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
       <span id="navPrevLabel">Previous</span>
       <span class="arrow-key">&larr;</span>
     </div>
-    <div class="page-nav-arrow" id="navNext" onclick="navigatePage(1)">
+    <div class="page-nav-arrow" id="navNext" data-page-dir="1">
       <span class="arrow-key">&rarr;</span>
       <span id="navNextLabel">Next</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
@@ -715,23 +778,23 @@
 
   <!-- Mobile bottom nav bar -->
   <div class="mobile-nav-bar" id="mobileNavBar">
-    <button class="mobile-nav-item active" onclick="showPage('home')" data-page="home">
+    <button class="mobile-nav-item active" data-page="home">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
       <span>Overview</span>
     </button>
-    <button class="mobile-nav-item" onclick="showPage('projects')" data-page="projects">
+    <button class="mobile-nav-item" data-page="projects">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
       <span>Experience</span>
     </button>
-    <button class="mobile-nav-item" onclick="showPage('skills-projects')" data-page="skills-projects">
+    <button class="mobile-nav-item" data-page="skills-projects">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
       <span>Projects</span>
     </button>
-    <button class="mobile-nav-item" onclick="showPage('about')" data-page="about">
+    <button class="mobile-nav-item" data-page="about">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
       <span>Interests</span>
     </button>
-    <button class="mobile-nav-item" onclick="showPage('contact')" data-page="contact">
+    <button class="mobile-nav-item" data-page="contact">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
       <span>Connect</span>
     </button>
@@ -739,22 +802,24 @@
 
   <footer>
     <p>© 2026 Dom Garcia</p>
-    <p style="margin-top: 0.3rem;">AI Strategist. Product Builder. Scalable Impact.</p>
   </footer>
 
   <script>
-    // Page navigation order
+    // Page navigation
     const pageOrder = ['home', 'projects', 'skills-projects', 'about', 'contact'];
     const pageNames = ['Overview', 'Experience', 'Projects', 'Interests', 'Connect'];
+    const hashMap = { '#overview': 'home', '#home': 'home', '#experience': 'projects', '#projects': 'skills-projects', '#interests': 'about', '#connect': 'contact', '#contact': 'contact' };
+    const reverseMap = { 'home': '#overview', 'projects': '#experience', 'skills-projects': '#projects', 'about': '#interests', 'contact': '#connect' };
+    const MOBILE_NAV_BUFFER = 70;
+    const DESKTOP_BUFFER = 82;
     let currentPageIndex = 0;
 
     function showPage(pageId, fromNav) {
-      document.querySelectorAll('.page').forEach(page => {
+      document.querySelectorAll('.page').forEach(function(page) {
         page.classList.remove('active');
       });
       document.getElementById(pageId).classList.add('active');
 
-      // Update nav links
       const navLinks = document.querySelectorAll('.nav-link');
       const pageIdx = pageOrder.indexOf(pageId);
       if (pageIdx !== -1) {
@@ -764,7 +829,6 @@
         });
       }
 
-      // Update mobile nav bar
       document.querySelectorAll('.mobile-nav-item').forEach(function(item) {
         item.classList.toggle('active', item.getAttribute('data-page') === pageId);
       });
@@ -772,11 +836,21 @@
       closeMenu();
       window.scrollTo(0, 0);
       updateNavHints();
+      updateScrollLock(pageId);
+
+      // Size dynamic layouts after paint
+      requestAnimationFrame(function() {
+        if (pageId === 'projects') sizeCarousel();
+        if (pageId === 'about') sizeInterestCarousel();
+        if (pageId === 'home' || pageId === 'contact') sizeWrappers();
+      });
+
+      if (reverseMap[pageId]) history.replaceState(null, '', reverseMap[pageId]);
     }
 
     function navigatePage(dir) {
-      let next = currentPageIndex + dir;
-      if (next < 0 || next >= pageOrder.length) return; // no wrapping
+      const next = currentPageIndex + dir;
+      if (next < 0 || next >= pageOrder.length) return;
       showPage(pageOrder[next]);
     }
 
@@ -813,42 +887,80 @@
       hamburger.classList.remove('open');
     }
 
+    // Event listeners — no inline onclick
+    document.getElementById('hamburgerBtn').addEventListener('click', toggleMenu);
+
     document.addEventListener('click', function(event) {
       const nav = document.querySelector('nav');
-      if (!nav.contains(event.target)) {
-        closeMenu();
-      }
+      if (!nav.contains(event.target)) closeMenu();
     });
 
-    // Carousel — vertical timeline with year ranges
+    // Nav links (desktop menu)
+    document.querySelectorAll('[data-nav]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        showPage(el.dataset.nav, true);
+      });
+    });
+
+    // Mobile nav bar
+    document.querySelectorAll('.mobile-nav-item[data-page]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        showPage(el.dataset.page);
+      });
+    });
+
+    // Page navigation arrows
+    document.querySelectorAll('[data-page-dir]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        navigatePage(parseInt(el.dataset.pageDir));
+      });
+    });
+
+    // Carousel slide direction buttons
+    document.querySelectorAll('[data-slide-dir]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        moveSlide(parseInt(el.dataset.slideDir));
+      });
+    });
+
+    // Interest carousel buttons
+    document.querySelectorAll('[data-interest-dir]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        moveInterest(parseInt(el.dataset.interestDir));
+      });
+    });
+    document.querySelectorAll('[data-interest-idx]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        showInterest(parseInt(el.dataset.interestIdx));
+      });
+    });
+
+    // Experience carousel — vertical timeline with year ranges
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-slide');
     const totalSlides = slides.length;
     const timeline = document.getElementById('carouselTimeline');
 
-    // Each role has a start and end year; timeline spans 2016–2026
     const roleData = [
-      { slide: 0, startYear: 2024, endYear: 2026 },  // H&R Block
-      { slide: 1, startYear: 2023, endYear: 2023 },  // CodaMetrix
-      { slide: 2, startYear: 2022, endYear: 2023 },  // Twitter
-      { slide: 3, startYear: 2021, endYear: 2022 },  // Acrisure
-      { slide: 4, startYear: 2018, endYear: 2021 },  // DoD JAIC
-      { slide: 5, startYear: 2016, endYear: 2018 }   // USAF
+      { slide: 0, startYear: 2024, endYear: 2026 },
+      { slide: 1, startYear: 2023, endYear: 2023 },
+      { slide: 2, startYear: 2022, endYear: 2023 },
+      { slide: 3, startYear: 2021, endYear: 2022 },
+      { slide: 4, startYear: 2018, endYear: 2021 },
+      { slide: 5, startYear: 2016, endYear: 2018 }
     ];
 
     const minYear = 2016;
     const maxYear = 2026;
-    const yearSpan = maxYear - minYear; // 10 years
+    const yearSpan = maxYear - minYear;
+    const tlPadTop = 2;
+    const tlPadBot = 2;
 
-    // Helper: convert year to % position (top = newest = 2026, bottom = oldest = 2016)
-    // Adds padding so 2026 and 2016 aren't at the absolute edges
-    var tlPadTop = 2;  // % from top
-    var tlPadBot = 2;  // % from bottom
     function yearToPercent(y) {
       return tlPadTop + ((maxYear - y) / yearSpan) * (100 - tlPadTop - tlPadBot);
     }
 
-    // Build year marks along the timeline (every 2 years for cleanliness)
+    // Build timeline year marks
     const labelYears = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016];
     labelYears.forEach(function(y) {
       const mark = document.createElement('div');
@@ -866,26 +978,25 @@
       label.textContent = y;
       mark.appendChild(label);
 
-      // Click a year mark — find the closest role
-      mark.onclick = function() {
+      mark.addEventListener('click', function() {
         let best = 0;
         roleData.forEach(function(r, i) {
           if (y >= r.startYear && y <= r.endYear) best = i;
         });
         goToSlide(best);
-      };
+      });
 
       timeline.appendChild(mark);
     });
 
-    // Build range highlight lines (one per role)
+    // Build range highlight lines
     roleData.forEach(function(r) {
       const line = document.createElement('div');
       line.className = 'timeline-range-line';
       line.dataset.slide = r.slide;
       line.style.top = yearToPercent(r.endYear) + '%';
       line.style.height = (yearToPercent(r.startYear) - yearToPercent(r.endYear)) + '%';
-      if (line.style.height === '0%') { line.style.height = '2px'; } // single-year roles
+      if (line.style.height === '0%') line.style.height = '2px';
       timeline.appendChild(line);
     });
 
@@ -894,19 +1005,15 @@
       currentSlide = n;
       slides[currentSlide].classList.add('active');
 
-      var role = roleData[n];
-
-      // Highlight year dots and labels in range
+      const role = roleData[n];
       timeline.querySelectorAll('.timeline-dot').forEach(function(d) {
-        var y = parseInt(d.dataset.year);
+        const y = parseInt(d.dataset.year);
         d.classList.toggle('active', y >= role.startYear && y <= role.endYear);
       });
       timeline.querySelectorAll('.timeline-year-label').forEach(function(l) {
-        var y = parseInt(l.dataset.year);
+        const y = parseInt(l.dataset.year);
         l.classList.toggle('active', y >= role.startYear && y <= role.endYear);
       });
-
-      // Highlight range line
       timeline.querySelectorAll('.timeline-range-line').forEach(function(rl) {
         rl.classList.toggle('active', parseInt(rl.dataset.slide) === currentSlide);
       });
@@ -919,35 +1026,29 @@
       goToSlide(next);
     }
 
-    // Initialize first slide highlight
     goToSlide(0);
 
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
-      // Skip if user is typing in a form field
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
-      // Experience page: up/down for carousel
       if (document.getElementById('projects').classList.contains('active')) {
         if (e.key === 'ArrowUp') { e.preventDefault(); moveSlide(-1); return; }
         if (e.key === 'ArrowDown') { e.preventDefault(); moveSlide(1); return; }
       }
 
-      // Interests page: up/down for interest carousel
       if (document.getElementById('about').classList.contains('active')) {
         if (e.key === 'ArrowUp') { e.preventDefault(); moveInterest(-1); return; }
         if (e.key === 'ArrowDown') { e.preventDefault(); moveInterest(1); return; }
       }
 
-      // Left/right for page navigation (all pages)
       if (e.key === 'ArrowLeft') { e.preventDefault(); navigatePage(-1); }
       if (e.key === 'ArrowRight') { e.preventDefault(); navigatePage(1); }
     });
 
-    // Initialize nav hints on load
     updateNavHints();
 
-    // Touch swipe for mobile page navigation
+    // Touch swipe for mobile
     let touchStartX = 0;
     let touchStartY = 0;
     let touchEndX = 0;
@@ -964,53 +1065,23 @@
       handleSwipe();
     }, { passive: true });
 
-    // Mouse fallback for Chrome DevTools mobile emulation
-    let mouseIsDown = false;
-    document.addEventListener('mousedown', function(e) {
-      mouseIsDown = true;
-      touchStartX = e.screenX;
-      touchStartY = e.screenY;
-    });
-    document.addEventListener('mouseup', function(e) {
-      if (!mouseIsDown) return;
-      mouseIsDown = false;
-      touchEndX = e.screenX;
-      touchEndY = e.screenY;
-      handleSwipe();
-    });
-
     function handleSwipe() {
-      var diffX = touchEndX - touchStartX;
-      var diffY = touchEndY - touchStartY;
-      // Horizontal swipe: navigate between pages
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
       if (Math.abs(diffX) > 60 && Math.abs(diffX) > Math.abs(diffY) * 1.5) {
-        if (diffX > 0) {
-          navigatePage(-1); // swipe right = previous page
-        } else {
-          navigatePage(1);  // swipe left = next page
-        }
+        navigatePage(diffX > 0 ? -1 : 1);
       }
-      // Vertical swipe on experience page: navigate between slides
       if (Math.abs(diffY) > 50 && Math.abs(diffY) > Math.abs(diffX) * 1.5 && pageOrder[currentPageIndex] === 'projects') {
-        if (diffY > 0) {
-          moveSlide(-1); // swipe down = previous slide
-        } else {
-          moveSlide(1);  // swipe up = next slide
-        }
+        moveSlide(diffY > 0 ? -1 : 1);
       }
-      // Vertical swipe on interests page: navigate between interest cards
       if (Math.abs(diffY) > 50 && Math.abs(diffY) > Math.abs(diffX) * 1.5 && pageOrder[currentPageIndex] === 'about') {
-        if (diffY > 0) {
-          moveInterest(-1);
-        } else {
-          moveInterest(1);
-        }
+        moveInterest(diffY > 0 ? -1 : 1);
       }
     }
 
     // Interest carousel
-    var currentInterest = 0;
-    var totalInterests = 4;
+    let currentInterest = 0;
+    const totalInterests = 4;
 
     function showInterest(idx) {
       if (idx < 0 || idx >= totalInterests) return;
@@ -1024,80 +1095,74 @@
     }
 
     function moveInterest(dir) {
-      var next = currentInterest + dir;
+      let next = currentInterest + dir;
       if (next < 0) next = totalInterests - 1;
       if (next >= totalInterests) next = 0;
       showInterest(next);
     }
 
-    // Mobile: dynamically size carousel and prevent page scroll on experience page
+    // Dynamic sizing
+    function getBuffer() {
+      return window.innerWidth <= 768 ? MOBILE_NAV_BUFFER : DESKTOP_BUFFER;
+    }
+
     function sizeCarousel() {
       if (window.innerWidth > 768) return;
-      var carousel = document.querySelector('#projects .carousel');
+      const carousel = document.querySelector('#projects .carousel');
       if (!carousel) return;
-      var rect = carousel.getBoundingClientRect();
-      var mobileBuffer = 70;
-      var available = window.innerHeight - rect.top - mobileBuffer;
+      const rect = carousel.getBoundingClientRect();
+      const available = window.innerHeight - rect.top - MOBILE_NAV_BUFFER;
       if (available > 150) {
         carousel.style.height = available + 'px';
-        var sidebar = carousel.querySelector('.carousel-sidebar');
-        var track = carousel.querySelector('.carousel-track');
+        const sidebar = carousel.querySelector('.carousel-sidebar');
+        const track = carousel.querySelector('.carousel-track');
         if (sidebar) sidebar.style.height = available + 'px';
         if (track) track.style.height = available + 'px';
       }
     }
 
-    // Lock body scroll on experience + interests page (mobile)
     function updateScrollLock(pageId) {
       if (window.innerWidth <= 768 && (pageId === 'projects' || pageId === 'about')) {
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.width = '100%';
-        document.body.style.height = '100%';
       } else {
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
-        document.body.style.position = '';
-        document.body.style.width = '';
-        document.body.style.height = '';
       }
     }
 
-    // Dynamically size interest carousel to fill available space
     function sizeInterestCarousel() {
-      var layout = document.querySelector('.interest-carousel-layout');
+      const layout = document.querySelector('.interest-carousel-layout');
       if (!layout) return;
-      var rect = layout.getBoundingClientRect();
-      var isMobile = window.innerWidth <= 768;
-      var buffer = isMobile ? 70 : 82;
-      var h = Math.floor(window.innerHeight - rect.top - buffer);
+      const rect = layout.getBoundingClientRect();
+      const buffer = getBuffer();
+      const h = Math.floor(window.innerHeight - rect.top - buffer);
       if (h > 150) {
         layout.style.height = h + 'px';
-        var slides = layout.querySelectorAll('.interest-carousel-slide');
-        slides.forEach(function(s) { s.style.height = h + 'px'; });
+        layout.querySelectorAll('.interest-carousel-slide').forEach(function(s) {
+          s.style.height = h + 'px';
+        });
       }
     }
 
-    // Size overview bio-box and connect cta-section to match interest carousel buffer
     function sizeWrappers() {
-      var isMobile = window.innerWidth <= 768;
-      var buffer = isMobile ? 70 : 82; // match interest carousel buffers
-      // Overview: size bio-box (mobile only)
+      const isMobile = window.innerWidth <= 768;
+      const buffer = getBuffer();
       if (isMobile) {
-        var bioBox = document.querySelector('#home .bio-box');
+        const bioBox = document.querySelector('#home .bio-box');
         if (bioBox) {
-          var rect = bioBox.getBoundingClientRect();
-          var h = Math.floor(window.innerHeight - rect.top - buffer);
+          const rect = bioBox.getBoundingClientRect();
+          const h = Math.floor(window.innerHeight - rect.top - buffer);
           if (h > 150) {
             bioBox.style.height = h + 'px';
             bioBox.style.maxHeight = h + 'px';
           }
         }
       }
-      // Connect: size cta-section (both mobile and desktop)
-      var cta = document.querySelector('#contact .cta-section');
+      const cta = document.querySelector('#contact .cta-section');
       if (cta) {
-        var rect2 = cta.getBoundingClientRect();
-        var h2 = Math.floor(window.innerHeight - rect2.top - buffer);
+        const rect2 = cta.getBoundingClientRect();
+        const h2 = Math.floor(window.innerHeight - rect2.top - buffer);
         if (h2 > 150) {
           cta.style.height = h2 + 'px';
           cta.style.maxHeight = h2 + 'px';
@@ -1105,46 +1170,29 @@
       }
     }
 
-    // Hash-to-page mapping
-    var hashMap = { '#overview': 'home', '#home': 'home', '#experience': 'projects', '#projects': 'skills-projects', '#interests': 'about', '#connect': 'contact', '#contact': 'contact' };
-
-    // Run on page show and resize
-    var origShowPage = showPage;
-    showPage = function(pageId, fromNav) {
-      origShowPage(pageId, fromNav);
-      updateScrollLock(pageId);
-      if (pageId === 'projects') setTimeout(sizeCarousel, 50);
-      if (pageId === 'about') setTimeout(sizeInterestCarousel, 50);
-      if (pageId === 'home' || pageId === 'contact') setTimeout(sizeWrappers, 50);
-      // Update URL hash
-      var reverseMap = { 'home': '#overview', 'projects': '#experience', 'skills-projects': '#projects', 'about': '#interests', 'contact': '#connect' };
-      if (reverseMap[pageId]) history.replaceState(null, '', reverseMap[pageId]);
-    };
-
-    // On load: navigate to page from hash
+    // Hash-based routing
     (function() {
-      var hash = window.location.hash.toLowerCase();
-      if (hash && hashMap[hash]) {
-        showPage(hashMap[hash], true);
-      }
+      const hash = window.location.hash.toLowerCase();
+      if (hash && hashMap[hash]) showPage(hashMap[hash], true);
     })();
 
-    // Handle back/forward browser navigation
     window.addEventListener('hashchange', function() {
-      var hash = window.location.hash.toLowerCase();
+      const hash = window.location.hash.toLowerCase();
       if (hash && hashMap[hash]) showPage(hashMap[hash], true);
     });
+
     window.addEventListener('resize', function() {
       sizeCarousel();
       sizeInterestCarousel();
       sizeWrappers();
       updateScrollLock(pageOrder[currentPageIndex]);
     });
+
     // Navigation hint toast — shows once per session
     (function() {
-      var toast = document.createElement('div');
+      const toast = document.createElement('div');
       toast.className = 'nav-toast';
-      var isMobile = window.innerWidth <= 768;
+      const isMobile = window.innerWidth <= 768;
       if (isMobile) {
         toast.textContent = 'Swipe left, up, right, or down to navigate';
       } else {
