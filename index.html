@@ -177,6 +177,14 @@
     .side-project-item p, .interest-content .desc, .page-tagline { color: var(--color-text-muted); }
     .project-badge { background: var(--color-green-hover-bg); color: var(--color-green-dark); font-size: 0.65rem; font-weight: 600; padding: 0.15rem 0.55rem; border-radius: var(--radius-full); white-space: nowrap; }
     .project-meta { font-size: 0.72rem; color: var(--color-text-faint); margin-top: 0.4rem; font-weight: 500; }
+    .github-card { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.6rem; padding: 0.6rem 0.8rem; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); text-decoration: none; color: var(--color-text); transition: border-color 0.2s, box-shadow 0.2s; }
+    .github-card:hover { border-color: var(--color-primary-light); box-shadow: 0 2px 8px rgba(37,99,235,0.1); }
+    .github-card-icon { flex-shrink: 0; width: 24px; height: 24px; }
+    .github-card-info { flex: 1; min-width: 0; }
+    .github-card-name { font-size: 0.82rem; font-weight: 600; color: var(--color-primary); }
+    .github-card-desc { font-size: 0.72rem; color: var(--color-text-muted); margin-top: 0.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .github-card-stats { display: flex; gap: 0.8rem; flex-shrink: 0; font-size: 0.7rem; color: var(--color-text-faint); font-weight: 500; }
+    .github-card-stats span { display: flex; align-items: center; gap: 0.2rem; }
 
     /* Interest page */
     #about section { margin-bottom: 0; }
@@ -334,6 +342,10 @@
       .side-project-item p { font-size: 0.72rem; }
       .project-badge { font-size: 0.58rem; }
       .project-meta { font-size: 0.65rem; }
+      .github-card { padding: 0.5rem 0.7rem; gap: 0.4rem; }
+      .github-card-name { font-size: 0.75rem; }
+      .github-card-desc { font-size: 0.65rem; }
+      .github-card-stats { font-size: 0.62rem; }
       .skill-tags { gap: 0.35rem; }
       .skill-tag { font-size: 0.68rem; padding: 0.3rem 0.65rem; }
       /* Mobile interest carousel: vertical layout, photo keeps aspect ratio */
@@ -645,6 +657,17 @@
               <li>Architect agent that optimizes the pipeline itself</li>
             </ul>
             <div class="project-meta">AI agent framework &middot; Multi-agent orchestration &middot; Human-on-the-loop quality gates</div>
+            <a href="https://github.com/domsnoms/ai-job-pipeline" target="_blank" rel="noopener" class="github-card" id="github-card-pipeline">
+              <svg class="github-card-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              <div class="github-card-info">
+                <div class="github-card-name">domsnoms/ai-job-pipeline</div>
+                <div class="github-card-desc" id="github-card-desc">Multi-agent job application pipeline</div>
+              </div>
+              <div class="github-card-stats" id="github-card-stats">
+                <span>⭐ <span id="gh-stars">—</span></span>
+                <span>🍴 <span id="gh-forks">—</span></span>
+              </div>
+            </a>
           </div>
           <div class="side-project-item">
             <div class="side-project-header">
@@ -652,10 +675,22 @@
               <span class="project-badge">Complete</span>
             </div>
             <ul class="side-project-bullets">
-              <li>Single-file HTML portfolio — no frameworks, no CMS, no dependencies</li>
+              <li>Zero-dependency portfolio — all HTML, CSS, and JS in a single file, no frameworks or build tools</li>
+              <li>Hash-based SPA routing with swipe navigation, lazy-loaded images, and responsive design</li>
               <li>Communicates product thinking through its own design decisions</li>
             </ul>
-            <div class="project-meta">Designed, coded, and deployed with Claude AI &middot; GitHub</div>
+            <div class="project-meta">Built and iterated with Claude AI &middot; GitHub Pages &middot; Custom domain</div>
+            <a href="https://github.com/domsnoms/dom-garcia-portfolio" target="_blank" rel="noopener" class="github-card" id="github-card-portfolio">
+              <svg class="github-card-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              <div class="github-card-info">
+                <div class="github-card-name">domsnoms/dom-garcia-portfolio</div>
+                <div class="github-card-desc" id="github-card-portfolio-desc">Personal portfolio site</div>
+              </div>
+              <div class="github-card-stats">
+                <span>⭐ <span id="gh-portfolio-stars">—</span></span>
+                <span>🍴 <span id="gh-portfolio-forks">—</span></span>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -1204,6 +1239,24 @@
       setTimeout(function() { toast.classList.remove('visible'); }, 4500);
       setTimeout(function() { toast.remove(); }, 5000);
     })();
+
+    // Fetch GitHub repo data for project cards
+    function loadGitHubCard(repo, descId, starsId, forksId) {
+      fetch('https://api.github.com/repos/' + repo)
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(data) {
+          if (!data) return;
+          var desc = document.getElementById(descId);
+          var stars = document.getElementById(starsId);
+          var forks = document.getElementById(forksId);
+          if (data.description && desc) desc.textContent = data.description;
+          if (stars) stars.textContent = data.stargazers_count;
+          if (forks) forks.textContent = data.forks_count;
+        })
+        .catch(function() {});
+    }
+    loadGitHubCard('domsnoms/ai-job-pipeline', 'github-card-desc', 'gh-stars', 'gh-forks');
+    loadGitHubCard('domsnoms/dom-garcia-portfolio', 'github-card-portfolio-desc', 'gh-portfolio-stars', 'gh-portfolio-forks');
   </script>
 </body>
 </html>
